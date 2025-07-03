@@ -1,5 +1,5 @@
-Keith Thomson – Portfolio Blog
-This is the official portfolio and blog site of Keith Thomson, a full-stack developer and systems analyst. Built with Go (Gin Gonic), Vue, and TailwindCSS, the site showcases blog posts, projects, and professional experience. Content is served from a MariaDB backend and dynamically rendered with Markdown and HTML templates.
+Portfolio Blog
+ Built with Go (Gin Gonic), Vue, and TailwindCSS, the site showcases blog posts, projects, and professional experience.
 
 🔧 Features
 📰 Blog rendering with Markdown support
