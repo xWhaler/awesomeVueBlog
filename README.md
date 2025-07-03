@@ -1,6 +1,7 @@
 Portfolio Blog
  Built with Go (Gin Gonic), Vue, and TailwindCSS, the site showcases blog posts, projects, and professional experience.
 
+
 🔧 Features
 📰 Blog rendering with Markdown support
 
@@ -14,21 +15,37 @@ Portfolio Blog
 
 🔒 Secure routing and scalable Go backend
 
-🛢️ MariaDB integration for content storage
+🛢️ MariaDB Integration for Content Storage
 
-📁 Project Structure
-php
+## 📁 Project Structure
+
+<h5>
+main.go # Gin Gonic entry point
+
+templates/ # HTML templates (index, base, posts, about, etc.)
+
+
+static/ # Static assets (CSS, images, icons)
+
+handlers/ # Route handlers for each page
+
+models/ # DB models for posts and metadata
+
+views/ # Vue components (for hybrid rendering)
+
+README.md # You are here
+
 Copy
 Edit
-.
-├── main.go                 # Gin Gonic entry point
-├── templates/              # HTML templates (index, base, posts, about, etc.)
-├── static/                 # Static assets (CSS, images, icons)
-├── handlers/               # Route handlers for each page
-├── models/                 # DB models for posts and metadata
-├── views/ (if Vue SPA)     # Vue components (for hybrid rendering)
-└── README.md               # You are here
-🚀 Running the App
+
+ 
+</h5>
+
+
+
+<img src="https://github.com/user-attachments/assets/afafd7ae-b708-40bb-b0ac-1c4bda3a86eb" style="width: 600px; height: 450px;"></img>
+
+##  🚀 Running the App
 1. Prerequisites:
 
 Go 1.20+
@@ -37,32 +54,27 @@ Node.js (for Vue build, if used)
 
 MariaDB with a database named content containing tables like all_posts
 
-2. Environment Setup:
+### Replace database name "content" and table name "all_posts" with your credentials. 
+##### Also modify the connection string for the db to use your specified database.
 
-bash
-Copy
-Edit
-cp .env.example .env  # if using env for DB credentials
-3. Run the server:
 
-bash
-Copy
-Edit
+## 3. Run the server:
+```
 go run main.go
+```
 4. Access via:
+```
 http://localhost:8080
-
+```
 📦 Deployment
 Reverse proxy with Caddy or Nginx recommended
-
+```
 Set GIN_MODE=release in production
-
+```
 Optional: Use Docker for containerized deployment
 
-👨‍💻 About Me
-Keith Thomson is a U.S. Army veteran turned software engineer with expertise in Go, Rust, Python, cloud systems, and AI integrations. This site is both a resume and a publication space for original technical writing and applied research.
 
 ☕ Support
 If you enjoy the content or find the guides helpful:
 
-Buy Me a Coffee
+
